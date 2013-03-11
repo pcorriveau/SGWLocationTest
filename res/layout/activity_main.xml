@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Status"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location"
+        android:layout_margin="10dp" />
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txtOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Other"
+        android:layout_margin="10dp" />
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check Enabled"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnBestProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Best Provider" />
+        <Button
+            android:id="@+id/btnBestLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Best Location" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Accuracy" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+    
+        <RadioButton
+            android:id="@+id/rbAccuracyFine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ACCURACY_FINE"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rbAccuracyCoarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCURACY_COARSE"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="8sp" />
+
+   </RadioGroup> 
+   
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Power" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+    
+        <RadioButton
+            android:id="@+id/rbPowerLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="POWER_LOW"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rbPowerMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POWER_MEDIUM"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rbPowerHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POWER_HIGH"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="8sp" />
+        </RadioGroup>
+        
+</LinearLayout>
